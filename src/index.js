@@ -63,5 +63,8 @@ const ctaHeader = document.querySelector("h1");
 ctaHeader.textContent = siteContent["cta"]["h1"];
 const buttonContent = document.querySelector(".cta-text button")
 buttonContent.textContent = siteContent["cta"]["button"]
+const ctaImage = document.querySelector("#cta-img")
+ctaImage.setAttribute("src",siteContent["images"]["cta-img"])
+
 
 
