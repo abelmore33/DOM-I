@@ -39,4 +39,29 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+
+
 console.log('project wired!')
+const firstLink = document.querySelector("nav a");
+const secondLink = document.querySelector("nav a:nth-of-type(2)")
+const thirdLink = document.querySelector("nav a:nth-of-type(3)")
+const fourthLink = document.querySelector("nav a:nth-of-type(4)")
+const fifthLink = document.querySelector("nav a:nth-of-type(5)")
+const sixthLink = document.querySelector("nav a:nth-of-type(6)")
+
+firstLink.textContent = siteContent["nav"]["nav-item-1"];
+secondLink.textContent = siteContent["nav"]["nav-item-2"];
+thirdLink.textContent = siteContent["nav"]["nav-item-3"];
+fourthLink.textContent = siteContent["nav"]["nav-item-4"];
+fifthLink.textContent = siteContent["nav"]["nav-item-5"];
+sixthLink.textContent = siteContent["nav"]["nav-item-6"];
+
+const logo = document.querySelector("header img");
+logo.setAttribute("src","http://localhost:9000/img/logo.png");
+
+const ctaHeader = document.querySelector("h1");
+ctaHeader.textContent = siteContent["cta"]["h1"];
+const buttonContent = document.querySelector(".cta-text button")
+buttonContent.textContent = siteContent["cta"]["button"]
+
+
