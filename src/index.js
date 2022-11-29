@@ -94,3 +94,12 @@ bottomLeftP.textContent = siteContent["main-content"]["services-content"]
  const bottomRightP = document.querySelector(" .bottom-content .text-content:nth-of-type(3) p")
  bottomRightP.textContent = siteContent["main-content"]["vision-content"]
 
+const contactHeading = document.querySelector(".contact h4");
+contactHeading.textContent = siteContent["contact"]["contact-h4"]
+const address = document.querySelector(".contact p");
+address.textContent = siteContent["contact"]["address"];
+const phoneNumber = document.querySelector(".contact p:nth-of-type(2)");
+phoneNumber.textContent= siteContent["contact"]["phone"];
+const email = document.querySelector(".contact p:nth-of-type(3)");
+email.textContent = siteContent["contact"]["email"];
+
