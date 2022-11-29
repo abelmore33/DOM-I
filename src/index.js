@@ -61,10 +61,36 @@ logo.setAttribute("src","http://localhost:9000/img/logo.png");
 
 const ctaHeader = document.querySelector("h1");
 ctaHeader.textContent = siteContent["cta"]["h1"];
-const buttonContent = document.querySelector(".cta-text button")
-buttonContent.textContent = siteContent["cta"]["button"]
-const ctaImage = document.querySelector("#cta-img")
-ctaImage.setAttribute("src",siteContent["images"]["cta-img"])
+const buttonContent = document.querySelector(".cta-text button");
+buttonContent.textContent = siteContent["cta"]["button"];
+const ctaImage = document.querySelector("#cta-img");
+ctaImage.setAttribute("src",siteContent["images"]["cta-img"]);
 
+const topLeftHeading = document.querySelector(".text-content h4")
+topLeftHeading.textContent = siteContent["main-content"]["features-h4"];
+const topLeftParagraph = document.querySelector(".text-content p");
+topLeftParagraph.textContent = siteContent["main-content"]["features-content"];
 
+const topRightHeading = document.querySelector(".text-content:nth-of-type(2) h4");
+topRightHeading.textContent = siteContent["main-content"]["about-h4"];
+const topRightParagraph = document.querySelector(".text-content:nth-of-type(2) p");
+topRightParagraph.textContent = siteContent["main-content"]["about-content"];
+
+const middleImg = document.querySelector(".middle-img");
+middleImg.setAttribute("src",siteContent["images"]["accent-img"])
+
+const bottomLeftHeading = document.querySelector(".bottom-content .text-content:nth-of-type(1) h4")
+bottomLeftHeading.textContent = siteContent["main-content"]["services-h4"]
+const bottomLeftP = document.querySelector(".bottom-content .text-content:nth-of-type(1) p")
+bottomLeftP.textContent = siteContent["main-content"]["services-content"]
+
+ const bottomMiddleHeading = document.querySelector(" .bottom-content .text-content:nth-of-type(2) h4 ")
+ bottomMiddleHeading.textContent = siteContent["main-content"]["product-h4"]
+ const bottomMiddleP = document.querySelector(" .bottom-content .text-content:nth-of-type(2) p")
+ bottomMiddleP.textContent = siteContent["main-content"]["product-content"]
+
+ const bottomRightHeading = document.querySelector(" .bottom-content .text-content:nth-of-type(3) h4")
+ bottomRightHeading.textContent = siteContent["main-content"]["vision-h4"]
+ const bottomRightP = document.querySelector(" .bottom-content .text-content:nth-of-type(3) p")
+ bottomRightP.textContent = siteContent["main-content"]["vision-content"]
 
