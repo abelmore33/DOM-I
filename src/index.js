@@ -42,19 +42,19 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 
 console.log('project wired!')
-const firstLink = document.querySelector("nav a");
-const secondLink = document.querySelector("nav a:nth-of-type(2)")
-const thirdLink = document.querySelector("nav a:nth-of-type(3)")
-const fourthLink = document.querySelector("nav a:nth-of-type(4)")
-const fifthLink = document.querySelector("nav a:nth-of-type(5)")
-const sixthLink = document.querySelector("nav a:nth-of-type(6)")
 
-firstLink.textContent = siteContent["nav"]["nav-item-1"];
-secondLink.textContent = siteContent["nav"]["nav-item-2"];
-thirdLink.textContent = siteContent["nav"]["nav-item-3"];
-fourthLink.textContent = siteContent["nav"]["nav-item-4"];
-fifthLink.textContent = siteContent["nav"]["nav-item-5"];
-sixthLink.textContent = siteContent["nav"]["nav-item-6"];
+const navClass = document.querySelectorAll("header nav a")
+const navLinkTexts = Object.values(siteContent.nav)
+navClass.forEach((link,idx) =>{
+  link.textContent = navLinkTexts[idx]
+  link.className = ("italic")
+
+})
+
+
+
+
+
 
 const logo = document.querySelector("header img");
 logo.setAttribute("src","http://localhost:9000/img/logo.png");
@@ -102,4 +102,8 @@ const phoneNumber = document.querySelector(".contact p:nth-of-type(2)");
 phoneNumber.textContent= siteContent["contact"]["phone"];
 const email = document.querySelector(".contact p:nth-of-type(3)");
 email.textContent = siteContent["contact"]["email"];
+
+const footerLink = document.querySelector("footer a");
+footerLink.textContent = siteContent["footer"]["copyright"]
+footerLink.classList.add("bold")
 
